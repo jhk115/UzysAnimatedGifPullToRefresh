@@ -182,7 +182,7 @@
     CGFloat yOffset = contentOffset.y;
     self.progress = ((yOffset+ self.originalTopInset + StartPosition)/(-self.progressThreshold ));
 //    NSLog(@"progrss %f yOffset %f",self.progress,yOffset);
-    self.center = CGPointMake(self.center.x, (contentOffset.y+ self.originalTopInset)/2);
+    //self.center = CGPointMake(self.center.x, (contentOffset.y+ self.originalTopInset)/2);
     switch (_state) {
         case UZYSGIFPullToRefreshStateStopped: //finish
             //            NSLog(@"Stoped");
