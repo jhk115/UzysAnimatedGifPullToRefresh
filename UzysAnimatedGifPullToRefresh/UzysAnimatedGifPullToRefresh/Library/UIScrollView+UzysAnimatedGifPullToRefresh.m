@@ -28,6 +28,8 @@ static char UIScrollViewPullToRefreshView;
         view.frame = CGRectMake((self.bounds.size.width - view.bounds.size.width)/2,
                                 -view.bounds.size.height, view.bounds.size.width, view.bounds.size.height);
         view.originalTopInset = self.contentInset.top;
+        // reset content insent for translucent
+        view.scrollView.contentInset = UIEdgeInsetsMake(0, 0, 0, 0);
         [self addSubview:view];
         [self sendSubviewToBack:view];
         self.pullToRefreshView = view;
